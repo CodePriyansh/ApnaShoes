@@ -1,5 +1,5 @@
 body {
-    background-color: #bd1365;
+    /* background-color: #cf7f7f; */
     font-size: 1.6rem;
     font-family: "Open Sans", sans-serif;
     color: #2b3e51;
@@ -18,10 +18,13 @@ body {
   a:link,
   a:visited,
   a:active {
-    color: #ce4b8a;
+    color: #E60000;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
-  }
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+}
   a:focus, a:hover,
   a:link:focus,
   a:link:hover,
@@ -127,7 +130,7 @@ body {
   input[type="submit"] {
     border: none;
     display: block;
-    background-color: #c50d66;
+    background-color: #E60000;
     color: #fff;
     font-weight: bold;
     text-transform: uppercase;
@@ -141,7 +144,7 @@ body {
     text-align: center;
   }
   input[type="submit"]:hover {
-    background-color: #ce4b8a;
+    background-color: #d15f5f;
     -webkit-transition: all 0.2s ease;
     transition: all 0.2s ease;
   }

@@ -1,5 +1,4 @@
 body { 
-	background: #f8d6e7; 
 	overflow-x:hidden;
     font-family: Arial, sans-serif
 }
@@ -38,7 +37,7 @@ body {
     width:250px;
     display:inline-block;
     margin-right:80px;
-    box-shadow:0px 0px 10px 0px #c50d66;
+    box-shadow:0px 0px 10px 0px #E60000;
     border-radius: 3px;;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -174,22 +173,22 @@ body {
 
 
 .mcd-menu li:hover > a {
-  color: #c50d66;
+  color: #E60000;
 }
 .mcd-menu li a.active {
   position: relative;
-  color: #c50d66;
+  color: #E60000;
   border:0;
-  /*border-top: 4px solid #c50d66;
-  border-bottom: 4px solid #c50d66;
+  /*border-top: 4px solid #E60000;
+  border-bottom: 4px solid #E60000;
   margin-top: -4px;*/
   box-shadow: 0 0 5px #DDD;
   -moz-box-shadow: 0 0 5px #DDD;
   -webkit-box-shadow: 0 0 5px #DDD;
   
   /* == */
-  border-left: 4px solid #c50d66;
-  border-right: 4px solid #c50d66;
+  border-left: 4px solid #E60000;
+  border-right: 4px solid #E60000;
   margin: 0 -4px;
   /* == */
 }
@@ -198,13 +197,13 @@ body {
   position: absolute;
   /*top: 0;
   left: 45%;
-  border-top: 5px solid #c50d66;
+  border-top: 5px solid #E60000;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;*/
   
   top: 42%;
   left: 0;
-  border-left: 5px solid #c50d66;
+  border-left: 5px solid #E60000;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
 }
@@ -214,7 +213,7 @@ body {
   position: absolute;
   top: 42%;
   right: 0;
-  border-right: 5px solid #c50d66;
+  border-right: 5px solid #E60000;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
 }
@@ -226,7 +225,7 @@ body {
   padding: 0;
   margin: 0;
   background: #FFF;
-  /*border-top: 4px solid #c50d66;*/
+  /*border-top: 4px solid #E60000;*/
   opacity: 0;
   visibility: hidden;
   transition: all 300ms linear;
@@ -240,7 +239,7 @@ body {
   /* == */
   left:280px;
   top: 0px;
-  border-left: 4px solid #c50d66;
+  border-left: 4px solid #E60000;
   /* == */
 }
 .mcd-menu li ul:before {
@@ -248,14 +247,14 @@ body {
   position: absolute;
   /*top: -8px;
   left: 23%;
-  border-bottom: 5px solid #c50d66;
+  border-bottom: 5px solid #E60000;
   border-left: 5px solid transparent;
   border-right: 5px solid transparent;*/
   
   /* == */
   top: 25px;
   left: -9px;
-  border-right: 5px solid #c50d66;
+  border-right: 5px solid #E60000;
   border-bottom: 5px solid transparent;
   border-top: 5px solid transparent;
   /* == */
@@ -293,7 +292,7 @@ body {
   left: 230px;
   top: 0;
   border: 0;
-  border-left: 4px solid #c50d66;
+  border-left: 4px solid #E60000;
 }  
 .mcd-menu li ul li ul:before {
   content: "";
@@ -303,7 +302,7 @@ body {
   /* == */
   left: -9px;
   /* == */
-  border-right: 5px solid #c50d66;
+  border-right: 5px solid #E60000;
   border-bottom: 5px solid transparent;
   border-top: 5px solid transparent;
 }
@@ -340,9 +339,9 @@ body {
   /* == */
 }
 .mcd-menu li a.search button {
-  border: 1px solid #c50d66;
+  border: 1px solid #E60000;
   /*padding: 10px;*/
-  background: #c50d66;
+  background: #E60000;
   outline: none;
   color: #FFF;
   margin-left: -4px;
@@ -353,14 +352,14 @@ body {
   /* == */
 }
 .mcd-menu li a.search input:focus {
-  border: 1px solid #c50d66;
+  border: 1px solid #E60000;
 }
 
 
 .search-mobile { 
 	display:none !important;
-	background:#c50d66;
-	border-left:1px solid #c50d66;
+	background:#E60000;
+	border-left:1px solid #E60000;
 	border-radius:0 3px 3px 0;
 }
 .search-mobile i { 
@@ -447,7 +446,7 @@ body {
 		position:absolute;
 		bottom:0px;
 		left:0;
-		background:#c50d66;
+		background:#E60000;
 		color:#FFF;
 		min-width:100%;
 		text-transform:lowercase;
@@ -477,13 +476,13 @@ body {
 		left:35px;
 		top: 45px;
 		border:0;
-		border-top:4px solid #c50d66;
+		border-top:4px solid #E60000;
 	}
 	.mcd-menu li ul li ul li > ul:before {
 		left:30px;
 		top: -9px;
 		border:0;
-		border-bottom:5px solid #c50d66;
+		border-bottom:5px solid #E60000;
 		border-left:5px solid transparent;
 		border-right:5px solid transparent;
 	}
@@ -523,7 +522,7 @@ body {
 		position:absolute;
 		bottom:0px;
 		left:0;
-		background:#c50d66;
+		background:#E60000;
 		color:#FFF;
 		min-width:100%;
 		text-transform:lowercase;
@@ -553,7 +552,7 @@ body {
 		left:35px;
 		top: 45px;
 		border:0;
-		border-top:4px solid #c50d66;
+		border-top:4px solid #E60000;
 	}
 	.mcd-menu li ul li ul li > ul:before {
 		left:30px;
