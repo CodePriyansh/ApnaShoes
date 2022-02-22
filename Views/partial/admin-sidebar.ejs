@@ -13,11 +13,8 @@
             </a>
             <ul>
                 <li data-toggle="modal" data-target="#myModal"><a href="#" ></i>Add Category</a></li>
-                <li>
-                    <a href="#"></i>Remove Category</a>
-
-                </li>
-                <li><a href="#">View Category</a></li>
+              
+                <li><a href="/admin/view-category">View Category</a></li>
 
 
             </ul>
@@ -72,12 +69,12 @@
       
         <!-- Modal Header -->
         <div class="modal-header">
-          <h4 class="modal-title" >Add Category</h4>
+          <h4 class="modal-title " >Add Category</h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
         </div>
         
         <!-- Modal body -->
-        <div class="modal-body modal-2">
+        <div class="modal-body">
           <form action="/category/add" method="POST" enctype="multipart/form-data">
               <div class="form-group">
                   <label>Category Name</label>
@@ -89,7 +86,7 @@
               </div>
               <div class="form-group">
                   <button class="btn btn-danger" data-dismiss="modal">Cancel</button>
-                  <button class="btn btn-primary" type="submit">Add</button>
+                  <button class="btn btn-secondary" type="submit">Add</button>
               </div>
           </form>
         </div>
