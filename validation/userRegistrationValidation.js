@@ -85,7 +85,7 @@ function ValidatePassword() {
         passworderror.style.color = "red";
 
     }
-    else if(Password.length < minNumberofChars || Password.length > maxNumberofChars){
+    else if(Password.length < minNumberofChars || password.length > maxNumberofChars){
         return false;
     }
     else

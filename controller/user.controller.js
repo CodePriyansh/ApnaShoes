@@ -28,17 +28,24 @@ exports.userLoginPost = (request,response,next)=>{
 };
 
 exports.userRegisterPage=(request,response,next)=>{
-    const name =response.body.username;
+    response.render("../Views/user-pages/user_registration.ejs",{
+        tittle:"UserRegister"
+    });
+};
+
+
+
+exports.userRegisterPost=(request,response,next)=>{
+    const name =response.body.name;
     const email=response.body.email;
     const number=response.body.number;
     const password = response.body.password;
-    User.registerSave().then(result=>{
-        if(result.length>0){
-            response.redirect("../Views/user-pages/user_registration.ejs");
-        }
-        else
-        console.log("registration failed...");
+    let user = new User(name,email,number,password);
+    User.registerSave()
+    .then(result=>{
+       response.send("registration success..");
     }).catch(err=>{
         console.log(err);
+        response.send("registration failed..");
     });
 };

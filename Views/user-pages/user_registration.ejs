@@ -10,27 +10,27 @@
 
 <body>
     <div class="container m-5">
-        <form action="/register-form" method="post">
+        <form action="/register" method="post">
             <div class="form-group">
                 <label>Name</label>
-                <input onkeyup="ValidateUserName()" id="username" type="text" placeholder="Name"
+                <input onkeyup="ValidateUserName()" id="name" name="name" type="text" placeholder="Name"
                     class="form-control">
                 <small id=usernameerror></small>
             </div>
             
            <div class="form-group">
                 <label>Email</label>
-                <input onkeyup="ValidateEmail()" id="email" type="text" class="form-control" placeholder="Email">
+                <input onkeyup="ValidateEmail()" id="email" type="text" name="email" class="form-control" placeholder="Email">
                 <small id="emailerror"></small>
             </div>
             <div class="form-group">
                 <label>Number</label>
-                <input onkeyup="ValidateNumber()" id="number" placeholder="number" class="form-control" type="text">
+                <input onkeyup="ValidateNumber()" id="number" placeholder="number" name="number" class="form-control" type="text">
                 <small id="numbererror"></small>
             </div>
             <div class="form-group">
                 <label>Password</label>
-                <input onkeyup="ValidatePassword()" id="password" placeholder="password" class="form-control" type="text">
+                <input onkeyup="ValidatePassword()" id="password" name="password" placeholder="password" class="form-control" type="text">
                 <small id="passworderror"></small>
             </div>
             <div class="form-group">
