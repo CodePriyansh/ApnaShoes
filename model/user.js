@@ -14,29 +14,17 @@ module.exports = class User {
         else {
           let sql = "select * from user where email=? and password=?";
           databaseConnection.query(sql, [this.email, this.password], (err, queryResult) => {
+            console.log(queryResult)
             databaseConnection.release();
+
             err ? reject(err) : resolve(queryResult);
+
           });
         }
       });
     });
   }
-  save() {
-    return new Promise((resolve, reject) => {
-      pool.getConnection((err, con) => {
-        if (err) reject(err);
-        else {
-          let sql = "insert into user(email,password) values(?,?)";
-          con.query(sql, [this.email, this.password], (err, result) => {
-            con.release();
-            if (err) reject(err);
-            else
-              resolve(result);
-          });
-        }
-      });
-    });
-  }
+  
   registerSave() {
     return new Promise((resolve, reject) => {
       pool.getConnection((err, con) => {

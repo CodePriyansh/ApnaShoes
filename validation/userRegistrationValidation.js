@@ -1,29 +1,29 @@
 
-function ValidateUserName() {
+function ValidateName() {
     var status = true;
     var num = false;
-    var username = document.getElementById("username").value;
-    var usernameerror = document.getElementById("usernameerror");
+    var name = document.getElementById("name").value;
+    var nameerror = document.getElementById("nameerror");
     for (var i = 0; i < username.length; i++) {
-        if (!(isNaN(username.charAt(i)))) {
+        if (!(isNaN(name.charAt(i)))) {
             num = true;
             break;
         }
 
     }
 
-    if (username == "") {
+    if (name == "") {
         status = false;
-        usernameerror.innerHTML = "please enter name";
-        usernameerror.style.color = "red";
+        nameerror.innerHTML = "please enter name";
+        nameerror.style.color = "red";
     }
     else if (num) {
         status = false;
-        usernameerror.innerHTML = "only alphabate allowed";
-        usernameerror.style.color = "red";
+        nameerror.innerHTML = "only alphabate allowed";
+        nameerror.style.color = "red";
     }
     else
-        usernameerror.innerHTML = "";
+        nameerror.innerHTML = "";
     return status;
 }
 
@@ -95,10 +95,10 @@ function ValidatePassword() {
 
 
 function ValidateData() {
-    var usernamestatus = ValidateUserName();
+    var namestatus = ValidateName();
     var emailstatus = ValidateEmail();
-    var numberstatus = ValidateNUmber();
-    if (usernamestatus && emailstatus && numberstatus &&passwordstatus)
+    var numberstatus = ValidateNumber();
+    if (namestatus && emailstatus && numberstatus &&passwordstatus)
         return true;
     return false;
 
