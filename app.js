@@ -1,6 +1,8 @@
 const express = require('express');
 const session = require('express-session');
 const bodyParser = require('body-parser');
+//const {check,validationResult}=require('express-validator');
+
 const adminRoute = require('./routes/admin.route');
 const userRouter = require('./routes/user.route');
 

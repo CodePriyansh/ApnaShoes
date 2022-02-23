@@ -1,3 +1,4 @@
+const { urlencoded } = require('body-parser');
 const { request, response } = require('express');
 const isAuth = require('../middleware/userAuth');
 const User = require('../model/user');
