@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <%- include('../partial/bootstrap.ejs')%>
+        <!-- <link rel="stylesheet" href="/css/style.css"/> -->
+    </head>
+    <body>
+        <div class="container mt-5">
+        <form action="/product/add-product" method="POST">
+            <div class="form-group">
+                <lable>Name</lable>
+                <input type="text" name="name" class="form-control"/>
+            </div>
+            <div class="form-group">
+                <lable>Price</lable>
+                <input type="text" name="price" class="form-control"/>
+            </div>
+            <div class="form-group">
+                <lable>Image</lable>
+                <input type="text" name="imageURL" class="form-control"/>
+            </div>
+            <div class="form-group">
+                <lable>Quantity</lable>
+                <input type="text" name="quantity" class="form-control"/>
+            </div>
+           
+            <div class="form-group" style="width: 400px;display: inline-block;margin-left: 100px;">
+                <label>Catagory</label>
+                <select name="category_id" class="form-control">
+                    <option value="0">select category</option>
+                    <%for(category of categories){%>
+                       <option value="<%=category.id%>"><%=category.name%></option>
+                    <%}%>    
+                </select>
+               <small id="experienceError"></small>
+            </div>
+           
+            <div class="form-group">
+                <lable>Description</lable>
+                <textarea name="description" class="form-control"></textarea>
+            </div>
+            <div class="form-group">
+              <button class="btn btn-primary" type="submit">Add product</button>
+            </div>
+        </form>
+       </div>
+    </body>
+</html>
