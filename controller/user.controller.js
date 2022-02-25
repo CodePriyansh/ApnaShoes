@@ -1,6 +1,6 @@
 const { urlencoded } = require('body-parser');
 const { request, response } = require('express');
-const isAuth = require('../middleware/userAuth');
+//const auth = require('../middleware/auth');
 const User = require('../model/user');
 exports.userHomePage = (request, response, next) => {
     response.render('../Views/user-pages/user_home.ejs', {
