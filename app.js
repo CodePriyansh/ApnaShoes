@@ -16,7 +16,7 @@ app.use(
     secret: "abcdef",
   })
 );
-
+//jaya
 app.use("/", userRouter);
 app.use("/admin", adminRoute);
 app.use("/category", categoryRoute);

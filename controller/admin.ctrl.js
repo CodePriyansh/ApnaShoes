@@ -2,7 +2,7 @@ const { required } = require("nodemon/lib/config");
 const Admin = require("../model/admin.js");
 
 exports.adminHomePage = (req,res) =>{
-  res.render("../Views/Admin-Page/admin_log.gjs")
+  res.render("../Views/Admin-Page/admin_log.ejs")
 }
 
 exports.adminLoginPage = (req, res) => {
