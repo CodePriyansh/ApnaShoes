@@ -16,7 +16,7 @@ app.use(
     secret: "abcdef",
   })
 );
-//jaya
+//tanu
 app.use("/", userRouter);
 app.use("/admin", adminRoute);
 app.use("/category", categoryRoute);
